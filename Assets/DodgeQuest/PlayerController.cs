@@ -14,6 +14,17 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //playerRigidbody = GetComponent<Rigidbody>();
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+
+        hp = 150f;
+
+
+        DelegateManager.Instance.GetDamageOperate += GetDamage50;
+>>>>>>> Stashed changes
+>>>>>>> parent of 844b7a2 (뭘까)
     }
 
     private void OnTriggerEnter(Collider other)
