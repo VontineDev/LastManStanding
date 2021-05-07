@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class MenuUI : MonoBehaviour
 {
+
+    //[SerializeField]
+    //private Button button;
+    //[SerializeField]
+    //private Text text;
+
+    // Start is called before the first frame update
+
     public GameObject menuOffset;
 
-    [SerializeField]
-    private Button button;
-    [SerializeField]
-    private Text text;
-    // Start is called before the first frame update
     void Start()
     {
         //button.onClick.AddListener(() =>
@@ -30,3 +33,4 @@ public class MenuUI : MonoBehaviour
         }
     }
 }
+

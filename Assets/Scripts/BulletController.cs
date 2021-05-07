@@ -38,10 +38,10 @@ public class BulletController : MonoBehaviour
         }
         else if (other.tag == "Enemy2")
         {
-            MonsterCtrl alien = other.GetComponent<MonsterCtrl>();
-            if (alien != null)
+     //       MonsterCtrl alien = other.GetComponent<MonsterCtrl>();
+     //       if (alien != null)
             {
-                alien.getDamage(bulletDamage);
+     //           alien.getDamage(bulletDamage);
             }
             Destroy(gameObject);
         }

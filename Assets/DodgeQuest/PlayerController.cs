@@ -8,15 +8,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRigidbody;
     public float speed = 8f;
 
-    [SerializeField]
-    float hp;
+    //[SerializeField]
+    private float hp = 100;
     // Start is called before the first frame update
     void Start()
     {
         //playerRigidbody = GetComponent<Rigidbody>();
-
-
-        DelegateManager.Instance.GetDamageOperate += GetDamage50;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,8 +24,7 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.tag == "PUNCH")
         {
-            DelegateManager.Instance.GetDamageOperation();
-            // GetDamage(50f);
+            GetDamage(10f);
         }
     }
 
@@ -51,15 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         return hp;
     }
-    public void GetDamage50()
-    {
-        hp -= 50f;
 
-        if (hp < 0 || hp == 0)
-        {
-            Die();
-        }
-    }
     public void GetDamage(float damage)
     {
         hp -= damage;
