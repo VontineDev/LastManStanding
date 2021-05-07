@@ -17,16 +17,21 @@ public class Enemy2 : MonoBehaviour
     float traceDist = 10f;   // distance of tracing
     [SerializeField]
     float attackDist; // distance of attack
+    [SerializeField]
+    float behaviorTime;
+
 
     private bool isDie = false; // whether monster is die or not
     private bool hasTarget = false;
+    [SerializeField]
+    string targetName;
     // Start is called before the first frame update
     void Start()
     {
         monsterTr = this.gameObject.GetComponent<Transform>();  //assgin monster Tr
         playerTr = GameObject.FindWithTag("Player").GetComponent<Transform>(); //assgin player Tr, find with tag
         nvAgent = this.gameObject.GetComponent<NavMeshAgent>();  //assgin navMeshAgent
-        nvAgent.speed = 5f;
+        nvAgent.speed = 2f;
         animator = GetComponent<Animator>(); //assign monster animator
 
         //this is disabled because should check distance first
@@ -47,10 +52,15 @@ public class Enemy2 : MonoBehaviour
             if (!hasTarget)
             {
                 if (rand == 0)
+                {
                     playerTr ??= GameObject.FindWithTag("Player").GetComponent<Transform>();
+                }
                 else
+                {
                     playerTr ??= GameObject.FindWithTag("Enemy1").GetComponent<Transform>();
+                }
 
+                targetName = playerTr.name;
                 hasTarget = true;
             }
         }
@@ -72,8 +82,8 @@ public class Enemy2 : MonoBehaviour
 
                 case MonsterState.roaming:
                     nvAgent.isStopped = true;
-                    var rand1 = Random.Range(-50, 50);
-                    var rand2 = Random.Range(-50, 50);
+                    var rand1 = Random.Range(-10, 20);
+                    var rand2 = Random.Range(-10, 20);
                     var dest = new Vector3(rand1, 0, rand2);
                     nvAgent.destination = dest;
                     nvAgent.isStopped = false;
@@ -81,7 +91,8 @@ public class Enemy2 : MonoBehaviour
 
                     animator.SetBool("IsTrace", true);
                     animator.SetBool("IsAttack", false);
-                    yield return new WaitForSeconds(5f);
+                    yield return new WaitForSeconds(behaviorTime);
+
                     break;
                 case MonsterState.trace:
 
@@ -98,8 +109,8 @@ public class Enemy2 : MonoBehaviour
                     nvAgent.isStopped = true;
                     print($"{this.gameObject.name} is attack");
                     animator.SetBool("IsAttack", true);
-                    yield return new WaitForSeconds(0.2f);
-
+                    yield return new WaitForSeconds(1f);
+                    animator.SetBool("IsAttack", false);
                     break;
             }
             yield return null;
@@ -115,13 +126,14 @@ public class Enemy2 : MonoBehaviour
             //wait for 0.2sec
             yield return new WaitForSeconds(0.2f);
             //check distance
-            float dist = Vector3.Distance(monsterTr.position, playerTr.position);
+            float dist = Vector3.Distance(monsterTr.position, playerTr.position - new Vector3(0, playerTr.position.y, 0));
+
             rand = Random.Range(0, 10);
-            if (dist <= attackDist && rand < 4)
+            if (dist <= attackDist && rand < 8)
             {
                 hasTarget = true;
                 monsterState = MonsterState.attack;
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(1f);
 
             }
             else if (dist <= traceDist && rand < 7)
@@ -133,7 +145,9 @@ public class Enemy2 : MonoBehaviour
             {
                 hasTarget = false;
                 monsterState = MonsterState.roaming;
-                yield return new WaitForSeconds(5f);
+                behaviorTime = Random.Range(4, 7);
+
+                yield return new WaitForSeconds(behaviorTime);
 
             }
             else
