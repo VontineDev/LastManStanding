@@ -93,8 +93,8 @@ public class MovementProvider : MonoBehaviour
     {
         // apply gravity to downward
         Vector3 gravity = new Vector3(0, Physics.gravity.y * gravityMultiplier, 0);
-       // print(gravity);
-        gravity.y = Time.deltaTime;
+        // print(gravity);
+        //gravity.y = Time.deltaTime;
 
         characterController.Move(gravity * Time.deltaTime);
 

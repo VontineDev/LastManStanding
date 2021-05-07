@@ -59,8 +59,8 @@ public class GameManager : MonoBehaviour
     {
         if (!isGameOver)
         {
-            hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
-            scoreText.text = "Score :" + (int)score;
+            //hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
+            //scoreText.text = "Score :" + (int)score;
         }
     }
 

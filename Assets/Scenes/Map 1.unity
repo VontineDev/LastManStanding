@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: b9189193df8d90b428b3fcbd7a122b67, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 15e4a8b392cb8454b899d568d2ede845, type: 2}
 --- !u!1 &59945514
 GameObject:
   m_ObjectHideFlags: 0
@@ -7230,7 +7230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  hp: 0
 --- !u!136 &8944265022595587950
 CapsuleCollider:
   m_ObjectHideFlags: 0

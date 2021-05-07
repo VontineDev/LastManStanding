@@ -50,8 +50,8 @@ public class Enemy1 : MonoBehaviour
 
                 case MonsterState.roaming:
                     nvAgent.isStopped = true;
-                    var rand1 = Random.Range(-50, 50);
-                    var rand2 = Random.Range(-50, 50);
+                    var rand1 = Random.Range(-37, 71);
+                    var rand2 = Random.Range(-70, 120);
                     var dest = new Vector3(rand1, 0, rand2);
                     nvAgent.destination = dest;
                     nvAgent.isStopped = false;
