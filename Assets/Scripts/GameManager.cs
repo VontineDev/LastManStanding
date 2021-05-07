@@ -99,6 +99,6 @@ public class GameManager : MonoBehaviour
     }
     void ShowHp()
     {
-        hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
+        //hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
     }
 }

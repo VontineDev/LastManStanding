@@ -10,10 +10,7 @@ public class MenuUI : MonoBehaviour
     //private Button button;
     //[SerializeField]
     //private Text text;
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     // Start is called before the first frame update
 
     public GameObject menuOffset;

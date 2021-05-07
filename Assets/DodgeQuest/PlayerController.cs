@@ -14,14 +14,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //playerRigidbody = GetComponent<Rigidbody>();
-<<<<<<< Updated upstream
-=======
+
 
         hp = 150f;
 
 
         DelegateManager.Instance.GetDamageOperate += GetDamage50;
->>>>>>> Stashed changes
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,21 +33,15 @@ public class PlayerController : MonoBehaviour
             GetDamage(10f);
         }
     }
+    public void GetDamage50()
+    {
+        hp -= 50;
 
-    // Update is called once per frame
-    //void Update()
-    //{
-
-    //    float xInput = Input.GetAxis("Horizontal");
-    //    float zInput = Input.GetAxis("Vertical");
-
-    //    float xSpeed = xInput * speed;
-    //    float zSpeed = zInput * speed;
-
-    //    Vector3 newVelocity = new Vector3(xSpeed, 0f, zSpeed);
-    //    playerRigidbody.velocity = newVelocity;
-
-    //}
+        if (hp < 0 || hp == 0)
+        {
+            Die();
+        }
+    }
 
     public float GetHp()
     {
