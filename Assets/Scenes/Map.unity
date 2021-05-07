@@ -304,7 +304,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &7006235
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1223,8 +1222,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &35814804
 Animator:
   serializedVersion: 3
@@ -6677,7 +6674,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &224311865
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10606,7 +10602,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &404507120
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13887,8 +13882,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &559389903
 Animator:
   serializedVersion: 3
@@ -16302,7 +16295,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 692296729}
-  - {fileID: 1705169016}
   m_Father: {fileID: 1376867964}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18038,8 +18030,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &726976231
 Animator:
   serializedVersion: 3
@@ -21189,7 +21179,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &843910658
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24014,7 +24003,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &934576981
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24563,7 +24551,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &951104078
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32605,7 +32592,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &1260492970
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37228,8 +37214,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1440769562
 Animator:
   serializedVersion: 3
@@ -38238,8 +38222,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1459003863
 Animator:
   serializedVersion: 3
@@ -38621,8 +38603,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1486063053
 Animator:
   serializedVersion: 3
@@ -43588,8 +43568,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1625875555
 Animator:
   serializedVersion: 3
@@ -43689,8 +43667,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1627589451
 Animator:
   serializedVersion: 3
@@ -45801,85 +45777,6 @@ Transform:
   m_Father: {fileID: 1996374056}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1705169015
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1705169016}
-  - component: {fileID: 1705169018}
-  - component: {fileID: 1705169017}
-  m_Layer: 5
-  m_Name: GameOverText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1705169016
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705169015}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 665953181}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1705169017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705169015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: C
---- !u!222 &1705169018
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705169015}
-  m_CullTransparentMesh: 1
 --- !u!1 &1705824025
 GameObject:
   m_ObjectHideFlags: 0
@@ -46756,8 +46653,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1740177391
 Animator:
   serializedVersion: 3
@@ -48113,7 +48008,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &1767082530
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -50062,7 +49956,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &1860721802
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -58290,8 +58183,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!195 &3682854013432470746
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60861,7 +60752,6 @@ GameObject:
   - component: {fileID: 4898482810384797744}
   - component: {fileID: 4898482810384797745}
   - component: {fileID: 4898482810384797746}
-  - component: {fileID: 4898482810384797747}
   m_Layer: 0
   m_Name: VR Rig
   m_TagString: Player
@@ -60910,103 +60800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: caef9774eda8f98458de4b9a60fb609c, type: 3}
-  audioSource: {fileID: 4898482810384797747}
---- !u!82 &4898482810384797747
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4898482810384797743}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!4 &4898482810841550632
 Transform:
   m_ObjectHideFlags: 0
@@ -64553,7 +64346,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &8644559207554657281
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -14,8 +14,6 @@ public class ChangeColor : MonoBehaviour
     // Update is called once per frame
     public void OnTriggerEnter(Collider collider)
     {
-
-
         if (collider.gameObject.tag == "VRRig")
         {
             circleColor.material.SetColor("_Color", Color.red);

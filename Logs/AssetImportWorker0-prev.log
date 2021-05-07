@@ -961,4 +961,9 @@ Received Import Request.
 Start importing Assets/Scripts/SoundManager.cs using Guid(8d88bc415a9856e40a829eeaec3d2a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72ca594d9beba195c6540518db4f3d2') in 0.003568 seconds
   Import took 0.006124 seconds .
 
+<<<<<<< Updated upstream
+=======
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> Stashed changes
