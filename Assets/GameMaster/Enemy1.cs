@@ -17,6 +17,9 @@ public class Enemy1 : MonoBehaviour
     public float traceDist = 10f;   // distance of tracing
     [SerializeField]
     public float attackDist; // distance of attack
+    [SerializeField]
+    float behaviorTime;
+
 
     private bool isDie = false; // whether monster is die or not
 
@@ -50,8 +53,8 @@ public class Enemy1 : MonoBehaviour
 
                 case MonsterState.roaming:
                     nvAgent.isStopped = true;
-                    var rand1 = Random.Range(-50, 50);
-                    var rand2 = Random.Range(-50, 50);
+                    var rand1 = Random.Range(-10, 20);
+                    var rand2 = Random.Range(-10, 20);
                     var dest = new Vector3(rand1, 0, rand2);
                     nvAgent.destination = dest;
                     nvAgent.isStopped = false;
@@ -59,7 +62,7 @@ public class Enemy1 : MonoBehaviour
 
                     animator.SetBool("IsTrace", true);
                     animator.SetBool("IsAttack", false);
-                    yield return new WaitForSeconds(5f);
+                    yield return new WaitForSeconds(behaviorTime);
 
                     break;
                 case MonsterState.trace:
@@ -93,7 +96,9 @@ public class Enemy1 : MonoBehaviour
             else if (rand < 8)
             {
                 monsterState = MonsterState.roaming;
-                yield return new WaitForSeconds(5f);
+                behaviorTime = Random.Range(4, 7);
+
+                yield return new WaitForSeconds(behaviorTime);
             }
             else
             {

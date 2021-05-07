@@ -13,7 +13,7 @@ public class UiSlider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slider = GetComponent<Slider>();
+        slider = this.gameObject.GetComponent<Slider>();
         DelegateManager.Instance.GetDamageOperate += ShowHP;
     }
     public void ShowHP()

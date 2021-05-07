@@ -16,8 +16,7 @@ public class ChangeColor : MonoBehaviour
     {
 
 
-        if (collider.gameObject.tag == "Player")
-
+        if (collider.gameObject.tag == "VRRig")
         {
             circleColor.material.SetColor("_Color", Color.red);
             Debug.Log("Check");

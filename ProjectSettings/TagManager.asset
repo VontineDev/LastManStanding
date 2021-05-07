@@ -7,6 +7,8 @@ TagManager:
   - Enemy1
   - Enemy2
   - PUNCH
+  - Enemy
+  - VRRig
   layers:
   - Default
   - TransparentFX
