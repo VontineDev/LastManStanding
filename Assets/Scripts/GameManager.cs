@@ -57,11 +57,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (!isGameOver)
-        //{
-        //    hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
-        //    scoreText.text = "Score :" + (int)score;
-        //}
+        if (!isGameOver)
+        {
+            hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
+            scoreText.text = "Score :" + (int)score;
+        }
     }
 
     public void SpawnEnemy()
@@ -99,6 +99,6 @@ public class GameManager : MonoBehaviour
     }
     void ShowHp()
     {
-        //hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
+        hpText.text = "HP :" + (int)playerGameObject.GetComponent<PlayerController>().GetHp();
     }
 }
