@@ -15,6 +15,17 @@ public class UiSlider : MonoBehaviour
     {
         slider = this.gameObject.GetComponent<Slider>();
         DelegateManager.Instance.GetDamageOperate += ShowHP;
+        StartCoroutine(ShowHpCoroutine());
+
+    }
+    IEnumerator ShowHpCoroutine()
+    {
+        while (true)
+        {
+            ShowHP();
+            yield return new WaitForSeconds(0.2f);
+
+        }
     }
     public void ShowHP()
     {

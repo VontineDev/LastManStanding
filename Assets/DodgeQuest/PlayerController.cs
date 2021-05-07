@@ -14,8 +14,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //playerRigidbody = GetComponent<Rigidbody>();
-
-
+        hp = 150;
         DelegateManager.Instance.GetDamageOperate += GetDamage50;
     }
 

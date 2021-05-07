@@ -23,6 +23,21 @@ public class Enemy1 : MonoBehaviour
 
     private bool isDie = false; // whether monster is die or not
 
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.tag == "PUNCH")
+        {
+            Die();
+            //DelegateManager.Instance.GetDamageOperation();
+            // GetDamage(50f);
+        }
+    }
+    void Die()
+    {
+        isDie = true;
+        animator.SetTrigger("IsDie");
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -107,4 +122,5 @@ public class Enemy1 : MonoBehaviour
             }
         }
     }
+
 }

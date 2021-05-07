@@ -23,6 +23,8 @@ public class Enemy2 : MonoBehaviour
 
     private bool isDie = false; // whether monster is die or not
     private bool hasTarget = false;
+    [SerializeField]
+    string targetName;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,10 +52,15 @@ public class Enemy2 : MonoBehaviour
             if (!hasTarget)
             {
                 if (rand == 0)
+                {
                     playerTr ??= GameObject.FindWithTag("Player").GetComponent<Transform>();
+                }
                 else
+                {
                     playerTr ??= GameObject.FindWithTag("Enemy1").GetComponent<Transform>();
+                }
 
+                targetName = playerTr.name;
                 hasTarget = true;
             }
         }
@@ -103,12 +110,8 @@ public class Enemy2 : MonoBehaviour
                     print($"{this.gameObject.name} is attack");
                     animator.SetBool("IsAttack", true);
                     yield return new WaitForSeconds(1f);
-                    animator.SetTrigger("IsIdle");
+                    animator.SetBool("IsAttack", false);
                     break;
-                default:
-                    animator.SetTrigger("IsIdle");
-                    break;
-
             }
             yield return null;
         }
