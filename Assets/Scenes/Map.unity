@@ -304,7 +304,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &7006235
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1223,8 +1222,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &35814804
 Animator:
   serializedVersion: 3
@@ -6602,7 +6599,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &224311865
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10663,7 +10659,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &404507120
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13925,8 +13920,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &559389903
 Animator:
   serializedVersion: 3
@@ -16280,7 +16273,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD
   - {fileID: 1972993086}
+=======
+  - {fileID: 692296729}
+>>>>>>> parent of 9c5b8b3 (Whip(error))
   m_Father: {fileID: 1376867964}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17907,8 +17904,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &726976231
 Animator:
   serializedVersion: 3
@@ -21133,7 +21128,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &843910658
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24099,7 +24093,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &934576981
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24648,7 +24641,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &951104078
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32466,7 +32458,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &1260492970
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37087,8 +37078,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1440769562
 Animator:
   serializedVersion: 3
@@ -38097,8 +38086,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1459003863
 Animator:
   serializedVersion: 3
@@ -38480,8 +38467,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1486063053
 Animator:
   serializedVersion: 3
@@ -43447,8 +43432,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1625875555
 Animator:
   serializedVersion: 3
@@ -43548,8 +43531,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1627589451
 Animator:
   serializedVersion: 3
@@ -46500,8 +46481,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!95 &1740177391
 Animator:
   serializedVersion: 3
@@ -47857,7 +47836,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &1767082530
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -49806,7 +49784,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &1860721802
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -58119,8 +58096,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
-  targetName: 
 --- !u!195 &3682854013432470746
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -60689,11 +60664,15 @@ GameObject:
   - component: {fileID: 4898482810384797734}
   - component: {fileID: 4898482810384797744}
   - component: {fileID: 4898482810384797745}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   - component: {fileID: 4898482810384797747}
   - component: {fileID: 4898482810384797746}
 >>>>>>> Stashed changes
+=======
+  - component: {fileID: 4898482810384797746}
+>>>>>>> parent of 9c5b8b3 (Whip(error))
   m_Layer: 0
   m_Name: VR Rig
   m_TagString: VRRig
@@ -60729,6 +60708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   hp: 150
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!82 &4898482810384797746
@@ -60828,6 +60808,9 @@ AudioSource:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!114 &4898482810384797747
+=======
+--- !u!114 &4898482810384797746
+>>>>>>> parent of 9c5b8b3 (Whip(error))
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60840,7 +60823,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: caef9774eda8f98458de4b9a60fb609c, type: 3}
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9c5b8b3 (Whip(error))
 --- !u!4 &4898482810841550632
 Transform:
   m_ObjectHideFlags: 0
@@ -64387,7 +64373,6 @@ MonoBehaviour:
   monsterState: 0
   traceDist: 10
   attackDist: 1.5
-  behaviorTime: 0
 --- !u!195 &8644559207554657281
 NavMeshAgent:
   m_ObjectHideFlags: 0
