@@ -6,7 +6,11 @@ using UnityEngine.UI;
 public class MenuUI : MonoBehaviour
 {
     public GameObject menuOffset;
-        
+
+    [SerializeField]
+    private Button button;
+    [SerializeField]
+    private Text text;
     // Start is called before the first frame update
     void Start()
     {

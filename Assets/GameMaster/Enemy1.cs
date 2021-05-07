@@ -17,34 +17,16 @@ public class Enemy1 : MonoBehaviour
     public float traceDist = 10f;   // distance of tracing
     [SerializeField]
     public float attackDist; // distance of attack
-    [SerializeField]
-    float behaviorTime;
-
 
     private bool isDie = false; // whether monster is die or not
 
-    private void OnTriggerEnter(Collider other)
-    {
-
-        if (other.gameObject.tag == "PUNCH")
-        {
-            Die();
-            //DelegateManager.Instance.GetDamageOperation();
-            // GetDamage(50f);
-        }
-    }
-    void Die()
-    {
-        isDie = true;
-        animator.SetTrigger("IsDie");
-    }
     // Start is called before the first frame update
     void Start()
     {
         monsterTr = this.gameObject.GetComponent<Transform>();  //assgin monster Tr
         playerTr = GameObject.FindWithTag("Player").GetComponent<Transform>(); //assgin player Tr, find with tag
         nvAgent = this.gameObject.GetComponent<NavMeshAgent>();  //assgin navMeshAgent
-        nvAgent.speed = 2f;
+        nvAgent.speed = 5f;
         animator = GetComponent<Animator>(); //assign monster animator
 
         //this is disabled because should check distance first
@@ -68,8 +50,8 @@ public class Enemy1 : MonoBehaviour
 
                 case MonsterState.roaming:
                     nvAgent.isStopped = true;
-                    var rand1 = Random.Range(-10, 20);
-                    var rand2 = Random.Range(-10, 20);
+                    var rand1 = Random.Range(-50, 50);
+                    var rand2 = Random.Range(-50, 50);
                     var dest = new Vector3(rand1, 0, rand2);
                     nvAgent.destination = dest;
                     nvAgent.isStopped = false;
@@ -77,7 +59,7 @@ public class Enemy1 : MonoBehaviour
 
                     animator.SetBool("IsTrace", true);
                     animator.SetBool("IsAttack", false);
-                    yield return new WaitForSeconds(behaviorTime);
+                    yield return new WaitForSeconds(5f);
 
                     break;
                 case MonsterState.trace:
@@ -111,9 +93,7 @@ public class Enemy1 : MonoBehaviour
             else if (rand < 8)
             {
                 monsterState = MonsterState.roaming;
-                behaviorTime = Random.Range(4, 7);
-
-                yield return new WaitForSeconds(behaviorTime);
+                yield return new WaitForSeconds(5f);
             }
             else
             {
@@ -122,5 +102,4 @@ public class Enemy1 : MonoBehaviour
             }
         }
     }
-
 }

@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //playerRigidbody = GetComponent<Rigidbody>();
-        hp = 150;
+
+
         DelegateManager.Instance.GetDamageOperate += GetDamage50;
     }
 
@@ -71,8 +72,8 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
 
-        //FindObjectOfType<GameManager>().EndGame();
+        FindObjectOfType<GameManager>().EndGame();
     }
 }
