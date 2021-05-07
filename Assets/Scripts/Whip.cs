@@ -8,12 +8,14 @@ public class Whip : MonoBehaviour
 
     // Update is called once per frame
     public AudioClip audioClip;
+    public AudioSource audioSource;
 
     public void OnTriggerEnter(Collider collider)
     {
         if(collider.gameObject.tag == "Enemy2")
         {
-            collider.GetComponent<AudioClip>();
+            //audioSource.clip = audioClip;
+            audioSource.PlayOneShot(audioClip);
         }    
     }
 
