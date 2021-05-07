@@ -14,6 +14,14 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //playerRigidbody = GetComponent<Rigidbody>();
+<<<<<<< Updated upstream
+=======
+
+        hp = 150f;
+
+
+        DelegateManager.Instance.GetDamageOperate += GetDamage50;
+>>>>>>> Stashed changes
     }
 
     private void OnTriggerEnter(Collider other)
