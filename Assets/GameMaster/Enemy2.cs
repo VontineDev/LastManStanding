@@ -29,7 +29,7 @@ public class Enemy2 : MonoBehaviour
         monsterTr = this.gameObject.GetComponent<Transform>();  //assgin monster Tr
         playerTr = GameObject.FindWithTag("Player").GetComponent<Transform>(); //assgin player Tr, find with tag
         nvAgent = this.gameObject.GetComponent<NavMeshAgent>();  //assgin navMeshAgent
-        nvAgent.speed = 5f;
+        nvAgent.speed = 2f;
         animator = GetComponent<Animator>(); //assign monster animator
 
         //this is disabled because should check distance first
@@ -102,9 +102,13 @@ public class Enemy2 : MonoBehaviour
                     nvAgent.isStopped = true;
                     print($"{this.gameObject.name} is attack");
                     animator.SetBool("IsAttack", true);
-                    yield return new WaitForSeconds(0.2f);
-
+                    yield return new WaitForSeconds(1f);
+                    animator.SetTrigger("IsIdle");
                     break;
+                default:
+                    animator.SetTrigger("IsIdle");
+                    break;
+
             }
             yield return null;
         }
@@ -119,13 +123,14 @@ public class Enemy2 : MonoBehaviour
             //wait for 0.2sec
             yield return new WaitForSeconds(0.2f);
             //check distance
-            float dist = Vector3.Distance(monsterTr.position, playerTr.position);
+            float dist = Vector3.Distance(monsterTr.position, playerTr.position - new Vector3(0, playerTr.position.y, 0));
+
             rand = Random.Range(0, 10);
-            if (dist <= attackDist && rand < 4)
+            if (dist <= attackDist && rand < 8)
             {
                 hasTarget = true;
                 monsterState = MonsterState.attack;
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(1f);
 
             }
             else if (dist <= traceDist && rand < 7)

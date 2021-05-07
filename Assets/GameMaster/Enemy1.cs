@@ -29,7 +29,7 @@ public class Enemy1 : MonoBehaviour
         monsterTr = this.gameObject.GetComponent<Transform>();  //assgin monster Tr
         playerTr = GameObject.FindWithTag("Player").GetComponent<Transform>(); //assgin player Tr, find with tag
         nvAgent = this.gameObject.GetComponent<NavMeshAgent>();  //assgin navMeshAgent
-        nvAgent.speed = 5f;
+        nvAgent.speed = 2f;
         animator = GetComponent<Animator>(); //assign monster animator
 
         //this is disabled because should check distance first
