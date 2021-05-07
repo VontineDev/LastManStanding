@@ -16277,6 +16277,9 @@ RectTransform:
   - {fileID: 1972993086}
 =======
   - {fileID: 692296729}
+<<<<<<< HEAD
+>>>>>>> parent of 9c5b8b3 (Whip(error))
+=======
 >>>>>>> parent of 9c5b8b3 (Whip(error))
   m_Father: {fileID: 1376867964}
   m_RootOrder: 0
@@ -60665,11 +60668,15 @@ GameObject:
   - component: {fileID: 4898482810384797744}
   - component: {fileID: 4898482810384797745}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   - component: {fileID: 4898482810384797747}
   - component: {fileID: 4898482810384797746}
 >>>>>>> Stashed changes
+=======
+  - component: {fileID: 4898482810384797746}
+>>>>>>> parent of 9c5b8b3 (Whip(error))
 =======
   - component: {fileID: 4898482810384797746}
 >>>>>>> parent of 9c5b8b3 (Whip(error))
@@ -60708,6 +60715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   hp: 150
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -60811,6 +60819,9 @@ AudioSource:
 =======
 --- !u!114 &4898482810384797746
 >>>>>>> parent of 9c5b8b3 (Whip(error))
+=======
+--- !u!114 &4898482810384797746
+>>>>>>> parent of 9c5b8b3 (Whip(error))
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60824,7 +60835,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: caef9774eda8f98458de4b9a60fb609c, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9c5b8b3 (Whip(error))
 =======
 >>>>>>> parent of 9c5b8b3 (Whip(error))
 --- !u!4 &4898482810841550632
