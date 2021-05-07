@@ -14,17 +14,13 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //playerRigidbody = GetComponent<Rigidbody>();
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
+
 
         hp = 150f;
 
 
         DelegateManager.Instance.GetDamageOperate += GetDamage50;
->>>>>>> Stashed changes
->>>>>>> parent of 844b7a2 (뭘까)
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -58,7 +54,15 @@ public class PlayerController : MonoBehaviour
     {
         return hp;
     }
+    public void GetDamage50()
+    {
+        hp -= 50f;
 
+        if (hp < 0 || hp == 0)
+        {
+            Die();
+        }
+    }
     public void GetDamage(float damage)
     {
         hp -= damage;
